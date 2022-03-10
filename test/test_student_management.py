@@ -20,7 +20,7 @@ class TestStudentManagement(unittest.TestCase):
         age = 20
         course = "mechanical"
         output = self.manager.add_student(name, age, course)
-        expected_output = str(f"{name} details added")
+        expected_output = str(f"{name} details addedd")
         self.assertEqual(expected_output, output)
 
     def test_view_details(self):
