@@ -16,7 +16,7 @@ class StudentManagement:
             if self.students[index]["name"] == name:
                 age = self.students[index]["age"]
                 course = self.students[index]["course"]
-                # return str(f"Student details of {name} are age={age}, course={course}")
-                return ""
+                return str(f"Student details of {name} are age={age}, course={course}")
+                # return ""
         else:
             return "No data found"
