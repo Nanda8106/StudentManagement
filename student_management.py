@@ -9,3 +9,14 @@ class StudentManagement:
         self.students.append({"name":name, "age":age, "course": course})
         return str(f"{name} details added")
         # return "nothing"
+
+    # this functionality belongs to yahya mirza
+    def view_details(self, name):
+        for index in range(len(self.students)):
+            if self.students[index]["name"] == name:
+                age = self.students[index]["age"]
+                course = self.students[index]["course"]
+                # return str(f"Student details of {name} are age={age}, course={course}")
+                return ""
+        else:
+            return "No data found"

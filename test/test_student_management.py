@@ -25,3 +25,13 @@ class TestStudentManagement(unittest.TestCase):
         expected_output = str(f"{name} details added")
         self.assertEqual(expected_output, output)
 
+    # this test case belongs to Yahya Mirza
+    def test_view(self):
+        self.set_data()
+        data = self.manager.students[0]
+        name = data["name"]
+        age = data["age"]
+        course = data["course"]
+        output = self.manager.view_details(name)
+        expected_output = str(f"Student details of {name} are age={age}, course={course}")
+        self.assertEqual(expected_output, output)
