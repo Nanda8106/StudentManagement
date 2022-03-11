@@ -20,3 +20,14 @@ class StudentManagement:
                 # return ""
         else:
             return "No data found"
+
+    # This functionality belongs to Muhammad Usman
+    def update_student(self, name, age, course):
+        for index in range(len(self.students)):
+            if self.students[index]["name"] == name:
+                self.students[index] = {"name": name, "age":age, "course": course}
+                # return str(f"{name} details updated")
+                return ""
+        else:
+
+            return "No data found"
