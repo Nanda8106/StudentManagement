@@ -26,8 +26,8 @@ class StudentManagement:
         for index in range(len(self.students)):
             if self.students[index]["name"] == name:
                 self.students[index] = {"name": name, "age":age, "course": course}
-                # return str(f"{name} details updated")
-                return ""
+                return str(f"{name} details updated")
+                # return ""
         else:
 
             return "No data found"
