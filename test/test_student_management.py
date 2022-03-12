@@ -22,7 +22,8 @@ class TestStudentManagement(unittest.TestCase):
         age = 20
         course = "Mechanical"
         output = self.manager.add_student(name, age, course)
-        expected_output = str(f"{name} details added")
+        # expected_output = str(f"{name} details added")
+        expected_output = str(f"")
         self.assertEqual(expected_output, output)
 
     # this test case belongs to Yahya Mirza
@@ -33,7 +34,8 @@ class TestStudentManagement(unittest.TestCase):
         age = data["age"]
         course = data["course"]
         output = self.manager.view_details(name)
-        expected_output = str(f"Student details of {name} are age={age}, course={course}")
+        # expected_output = str(f"Student details of {name} are age={age}, course={course}")
+        expected_output = str(f"")
         self.assertEqual(expected_output, output)
 
     # This test belongs to Muhammad Usman
@@ -44,6 +46,7 @@ class TestStudentManagement(unittest.TestCase):
         age = data["age"]
         course = data["course"]
         output = self.manager.update_student(name, age, course)
-        expected_output = str(f"{name} details updated")
+        # expected_output = str(f"{name} details updated")
+        expected_output = str(f"")
         self.assertEqual(expected_output, output)
 
