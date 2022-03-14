@@ -1,1 +1,2 @@
 from .test_student_management import TestStudentManagement
+from .IntegrationTesting import TestIntegrationStudentManagement

@@ -22,7 +22,7 @@ class TestStudentManagement(unittest.TestCase):
         age = 20
         course = "Mechanical"
         output = self.manager.add_student(name, age, course)
-        expected_output = str(f"{name} details added")
+        expected_output = str(f"{name}")
         # expected_output = str(f"")
         self.assertEqual(expected_output, output)
 
@@ -34,7 +34,7 @@ class TestStudentManagement(unittest.TestCase):
         age = data["age"]
         course = data["course"]
         output = self.manager.view_details(name)
-        expected_output = str(f"Student details of {name} are age={age}, course={course}")
+        expected_output = [name, age, course]
         # expected_output = str(f"")
         self.assertEqual(expected_output, output)
 
@@ -46,7 +46,7 @@ class TestStudentManagement(unittest.TestCase):
         age = data["age"]
         course = data["course"]
         output = self.manager.update_student(name, age, course)
-        expected_output = str(f"{name} details updated")
+        expected_output = str(f"{name}")
         # expected_output = str(f"")
         self.assertEqual(expected_output, output)
 
